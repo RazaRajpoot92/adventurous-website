@@ -1,0 +1,312 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;   
+    
+}
+
+/* ------------Utility classes -------------------- */
+.btn1{
+    padding: 7px 15px;
+    border-radius: 7px;
+    background-color: rgb(193, 60, 223);
+    border: 1px solid rgb(193, 60, 223);
+    
+}
+.btn-sec{
+    padding: 10px 15px;
+    background-color: rgb(193, 60, 223);
+    color: black;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+
+/* ----------------------------- Main Section --------------------- */
+.main{
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/asset3.jpg);
+    background-size: cover;
+}
+
+
+/* ----------------------------- Navigation Section --------------------- */
+
+.navigation{
+
+    width: 100vw;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+   
+}
+
+
+/* ---------------List items -------------------- */
+
+.list ul li{
+    display: inline-block;
+    text-decoration: none;
+    
+    
+     
+}
+
+.list ul li a{
+    text-decoration: none;
+    color:white;
+    margin-top: 15px;
+    margin-left: 25px;
+    display: inline-block;
+    
+}
+
+.logo{
+    margin-right: 35%;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+/*---------------------------------- Content section ---------------------------- */
+.content {
+    
+    text-align: center;
+    color: white;
+    margin: 150px 100px;
+    margin-top: 200px;
+    font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
+    padding: 10px;
+    }
+
+.content h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.content h3{
+    line-height: 25px;
+    
+}
+.con-h3{
+    font-size: 20px;
+}
+.content a{
+    text-decoration: none;
+}
+
+/*------------------------- Hovering Effect -------------------------*/
+
+/* -------------------Buttons hover effect--------------- */
+
+.btn1:hover{
+    border: 1px solid rgb(181, 60, 192);
+    background-color: rgba(193, 60, 223, 0);
+}
+
+.btn-sec:hover{
+    border: 1px solid rgb(142, 26, 157);
+    background-color: rgba(193, 60, 223, 0);
+    color:white;
+    border-radius: 0px;
+}
+
+/* --------------------------Navigation links hover effect ----------------------- */
+
+.list ul li a:hover{
+    color: rgb(190, 28, 190)
+}
+
+
+/* ----------------- Plan button --------------- */
+
+.planbtn{
+    padding: 10px 22px;
+    color:rgb(238, 234, 234);
+    background-color: purple;
+    border: 1px solid purple;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7px;
+    display: inline-block;
+}
+.planbtn:hover{
+    background-color: rgb(195, 63, 207);
+    color:black;
+    transition: 0.5s;
+}
+
+
+/*------------------- Category section styling --------------- */
+
+
+/* ----------- Line styling ----------- */
+.line{
+    background-color: rgb(209, 78, 209);
+    height: 2px;
+}
+
+.s-line{
+    background-color: rgb(162, 15, 162);
+    height: 5px;
+    width: 27%;
+    border-radius: 5px;
+    margin:10px auto;
+}
+
+
+
+
+.category-sec{
+    width:100vw;
+    height:100vh;
+    background-color: rgb(31, 28, 28);
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+    font-family: "lyon-display-web", sans-serif, sans-serif;
+    position:relative;
+    overflow: hidden;
+}
+
+.circle{
+    height: 900px;
+    width: 900px;
+    position: absolute;
+    background-color: purple;
+    bottom:-25%;
+    left: -64%;
+    border-radius: 50%;
+}
+
+.circle2{
+    height: 900px;
+    width: 900px;
+    position: absolute;
+    background-color: purple;
+    bottom:-25%;
+    right: -63%;
+    border-radius: 50%;
+}
+
+.category{
+    position: relative;
+    overflow: hidden;
+}
+.sb-circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: purple;
+    position: absolute;
+    bottom: -12%;
+    left: -18%;
+}
+
+.st-circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: purple;
+    position: absolute;
+    top: -12%;
+    right: -18%;
+}
+
+.category:hover .st-circle, .category:hover .sb-circle{
+    background-color: rgba(238, 92, 238, 0.968);
+    transition: 0.4s;
+    width: 150px;
+    height: 70px;
+}
+.content-sec{
+    margin: 60px;
+    font-size: 25px;
+}
+
+.category-sec .category{
+    height: 330px;
+    width: 280px;
+    background-color: rgba(3, 3, 3, 0.754);
+    border: 2px solid rgb(26, 25, 25);
+    display: inline-block;
+    margin-left: 30px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.category:hover{
+  background-color: rgba(34, 31, 34, 0.927);
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px rgb(31, 31, 31);
+
+}
+
+.category .m1{
+    margin-top: 10px;
+    list-style: none;
+}
+
+
+.category  .l-item{
+    font-size: 15px;
+}
+
+.category .sub-h{
+    font-size: 15px;
+}
+.category .head{
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(202, 78, 202);
+    margin-bottom: 30px;
+
+}
+
+
+.category-sec .container{
+    width: 1200px;
+    display: inline-block;
+    text-align: center;
+}
+/* ------------------------ Footer styling --------------------- */
+
+.footer{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(39, 35, 35);
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+
+.footer-content{
+    width:60vw;
+    height: 60px;
+    margin:40px auto;
+    text-align: center;
+}
+
+.footer-link{
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color:white;
+}
+
+.footer-link:hover{
+    color:blueviolet;
+}
+
+.footer-copyright{
+
+    margin-top:10px ;
+    color: rgb(114, 111, 111);
+}
