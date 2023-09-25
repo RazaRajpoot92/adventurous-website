@@ -2,8 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;   
-    
+    overflow-x: hidden;
+
 }
 
 /* ------------Utility classes -------------------- */
@@ -12,7 +12,7 @@
     border-radius: 7px;
     background-color: rgb(193, 60, 223);
     border: 1px solid rgb(193, 60, 223);
-    
+
 }
 .btn-sec{
     padding: 10px 15px;
@@ -22,7 +22,7 @@
     border-bottom-right-radius: 10px;
     font-weight: bold;
     font-size: 18px;
-    
+
 }
 
 
@@ -44,7 +44,7 @@
     height: 10vh;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
-   
+
 }
 
 
@@ -53,9 +53,9 @@
 .list ul li{
     display: inline-block;
     text-decoration: none;
-    
-    
-     
+
+
+
 }
 
 .list ul li a{
@@ -64,19 +64,19 @@
     margin-top: 15px;
     margin-left: 25px;
     display: inline-block;
-    
+
 }
 
 .logo{
     margin-right: 35%;
     font-size: 25px;
     font-weight: bold;
-    
+
 }
 
 /*---------------------------------- Content section ---------------------------- */
 .content {
-    
+
     text-align: center;
     color: white;
     margin: 150px 100px;
@@ -91,7 +91,7 @@
 }
 .content h3{
     line-height: 25px;
-    
+
 }
 .con-h3{
     font-size: 20px;
@@ -346,6 +346,7 @@
     flex-direction: row;
     column-gap: 3px;
     font-size: 0.8rem;
+    justify-content: center;
 }
 .form-heading{
     text-align: center;
@@ -353,10 +354,9 @@
 }
 .form-input, .form-seclect{
     height: 32px;
-    background-color: rgba(23, 22, 22, 0.808);   
+    background-color: rgba(23, 22, 22, 0.808);
     border-radius: 7px;
     border: 1px solid black;
-    
     outline: none;
     padding-left:7px ;
     color: rgb(220, 211, 211);
@@ -385,12 +385,30 @@ label{
 .term-link{
     color: rgb(218, 209, 209);
     font-size: 0.8rem;
+    text-decoration: none;
+}
+.term-link:hover{
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
     .form-container{
         width: 100%;
-        margin:10px auto;
+        
     }
 }
 
+.al-log{
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+.al-log-link{
+    color: rgb(194, 40, 194);
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.al-log-link:hover{
+    text-decoration: underline;
+}
