@@ -1,9 +1,7 @@
-
 *{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-
 }
 
 /* ------------Utility classes -------------------- */
@@ -18,89 +16,12 @@
     padding: 10px 15px;
     background-color: rgb(193, 60, 223);
     color: black;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border: 1px solid rgb(142, 26, 157);
     font-weight: bold;
     font-size: 18px;
-
-}
-
-
-/* ----------------------------- Main Section --------------------- */
-.main{
-
-    width: 100vw;
-    height: 100vh;
-    background-image: url(./assets/asset3.jpg);
-    background-size: cover;
-}
-
-
-/* ----------------------------- Navigation Section --------------------- */
-
-.navigation{
-
-    width: 100vw;
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-
-}
-
-
-/* ---------------List items -------------------- */
-
-.list ul li{
-    display: inline-block;
     text-decoration: none;
 
-
-
 }
-
-.list ul li a{
-    text-decoration: none;
-    color:white;
-    margin-top: 15px;
-    margin-left: 25px;
-    display: inline-block;
-
-}
-
-.logo{
-    margin-right: 35%;
-    font-size: 25px;
-    font-weight: bold;
-
-}
-
-/*---------------------------------- Content section ---------------------------- */
-.content {
-
-    text-align: center;
-    color: white;
-    margin: 150px 100px;
-    margin-top: 200px;
-    font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
-    padding: 10px;
-    }
-
-.content h1{
-    font-size: 40px;
-    font-weight: bold;
-}
-.content h3{
-    line-height: 25px;
-
-}
-.con-h3{
-    font-size: 20px;
-}
-.content a{
-    text-decoration: none;
-}
-
-/*------------------------- Hovering Effect -------------------------*/
 
 /* -------------------Buttons hover effect--------------- */
 
@@ -116,199 +37,156 @@
     border-radius: 0px;
 }
 
-/* --------------------------Navigation links hover effect ----------------------- */
 
-.list ul li a:hover{
-    color: rgb(190, 28, 190)
-}
+/* ----------------------------- Main Section --------------------- */
+.main{
 
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/asset3.jpg);
+    background-size: cover;
+    font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
 
-/* ----------------- Plan button --------------- */
-
-.planbtn{
-    padding: 10px 22px;
-    color:rgb(238, 234, 234);
-    background-color: purple;
-    border: 1px solid purple;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 7px;
-    display: inline-block;
-}
-.planbtn:hover{
-    background-color: rgb(195, 63, 207);
-    color:black;
-    transition: 0.5s;
-}
-
-
-/*------------------- Category section styling --------------- */
-
-
-/* ----------- Line styling ----------- */
-.line{
-    background-color: rgb(209, 78, 209);
-    height: 2px;
-}
-
-.s-line{
-    background-color: rgb(162, 15, 162);
-    height: 5px;
-    width: 27%;
-    border-radius: 5px;
-    margin:10px auto;
 }
 
 
 
+/*---------------------------------- Content section ---------------------------- */
 
-.category-sec{
-    width:100vw;
-    height:100vh;
-    background-color: rgb(31, 28, 28);
-    color: white;
-    text-align: center;
-    padding-top: 0px;
-    font-family: "lyon-display-web", sans-serif, sans-serif;
-    position:relative;
-    overflow: hidden;
+.content-container{
+    width: 50%;
+    margin:auto;
+    margin-top: 20%;
+    padding:0px 10px;
+    font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(242, 240, 240);
+    row-gap: 15px;
+    font-size: 1.2rem;
 }
 
-.circle{
-    height: 900px;
-    width: 900px;
-    position: absolute;
-    background-color: purple;
-    bottom:-25%;
-    left: -64%;
-    border-radius: 50%;
-}
-
-.circle2{
-    height: 900px;
-    width: 900px;
-    position: absolute;
-    background-color: purple;
-    bottom:-25%;
-    right: -63%;
-    border-radius: 50%;
-}
+/*------------------------- Category Section -------------------------*/
 
 .category{
+    width: 100%;
+    padding-top:40px;
+    padding-bottom: 40px;
+    background-color: rgb(42, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica;
+    flex-direction: column;
+}
+.line{
+    width: 50%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: rgb(202, 50, 202);
+}
+.category-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    gap:20px;
+    padding-left: 40px;
+    padding-right: 10px;
+
+}
+.cart{
     position: relative;
     overflow: hidden;
 }
-.sb-circle{
-    height: 100px;
+.circle{
     width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background-color: purple;
+    background-color: rgb(220, 66, 220);
     position: absolute;
-    bottom: -12%;
-    left: -18%;
+    top:-16%;
+    right: -14%
 }
 
-.st-circle{
-    height: 100px;
+.circle2{
     width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background-color: purple;
+    background-color: rgb(220, 66, 220);
     position: absolute;
-    top: -12%;
-    right: -18%;
+    bottom:-16%;
+    left: -14%
 }
 
-.category:hover .st-circle, .category:hover .sb-circle{
-    background-color: rgba(238, 92, 238, 0.968);
-    transition: 0.4s;
+.cart:hover .circle , .cart:hover .circle2{
     width: 150px;
-    height: 70px;
+    transition: 0.5s;
 }
-.content-sec{
-    margin: 60px;
-    font-size: 25px;
+.cart:hover{
+    background-color: rgba(15, 14, 14, 0.517);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.819), 0 6px 20px 0 rgba(0, 0, 0, 0.688);
 }
-
-.category-sec .category{
-    height: 330px;
-    width: 280px;
-    background-color: rgba(3, 3, 3, 0.754);
-    border: 2px solid rgb(26, 25, 25);
-    display: inline-block;
-    margin-left: 30px;
-    border-radius: 20px;
-    text-align: center;
-    padding: 10px;
-}
-
-.category:hover{
-  background-color: rgba(34, 31, 34, 0.927);
-  transition: 0.3s;
-  box-shadow: 0px 0px 20px rgb(31, 31, 31);
-
-}
-
-.category .m1{
-    margin-top: 10px;
-    list-style: none;
-}
-
-
-.category  .l-item{
-    font-size: 15px;
-}
-
-.category .sub-h{
-    font-size: 15px;
-}
-.category .head{
-    font-size: 26px;
-    font-weight: bold;
-    color: rgb(202, 78, 202);
-    margin-bottom: 30px;
-
-}
-
-
-.category-sec .container{
-    width: 1200px;
-    display: inline-block;
-    text-align: center;
-}
-/* ------------------------ Footer styling --------------------- */
-
-.footer{
+.carts{
     width: 100%;
-    height: 20%;
-    background-color: rgb(39, 35, 35);
-    padding-top: 20px;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-top: 50px;
+
 }
 
-
-.footer-content{
-    width:60vw;
-    height: 60px;
-    margin:40px auto;
-    text-align: center;
+.cate-heading{
+    font-size: 2.8rem;
 }
 
-.footer-link{
-    margin-left: 20px;
+.cate-sub-heading{
+    font-size: 1.8rem;
+}
+.cart{
+    width: 20rem;
+    height: 24rem;
+    background-color: rgba(23, 23, 23, 0.751);
+    border: 1px solid rgb(229, 82, 232);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.cart-con{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    margin-left: 40px;
+    font-size: 1.2rem;
+}
+.cart-heading{
+    font-size: 2.2rem;
+    color: rgb(226, 73, 226);
+}
+.btn-plan{
+    padding: 10px 15px;
+    background-color: rgb(220, 22, 220);
+    color: white;
     text-decoration: none;
-    font-size: 1.1rem;
-    color:white;
+    border-radius: 7px;
+    border: 1px solid rgba(221, 160, 221, 0.072);
 }
-
-.footer-link:hover{
-    color:blueviolet;
-}
-
-.footer-copyright{
-
-    margin-top:10px ;
-    color: rgb(114, 111, 111);
+.btn-plan:hover{
+    background-color: rgba(220, 22, 220, 0.448);
+    border: 1px solid plum;
+    transition: 0.4s;
 }
 
 /* ------------Form Styling -------------- */
@@ -330,7 +208,7 @@
 }
 .background{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url(./assets/asset2.jpg);
     background-size: cover;
     font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
@@ -350,7 +228,7 @@
 }
 .form-heading{
     text-align: center;
-    color:rgb(206, 63, 191);
+    color:rgb(248, 19, 225);
 }
 .form-input, .form-seclect{
     height: 32px;
@@ -391,12 +269,7 @@ label{
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 600px) {
-    .form-container{
-        width: 100%;
-        
-    }
-}
+
 
 .al-log{
     font-size: 0.9rem;
@@ -411,4 +284,34 @@ label{
 }
 .al-log-link:hover{
     text-decoration: underline;
+}
+
+
+
+/* --------------- Media query ------------- */
+
+@media only screen and (max-width: 600px) {
+
+    /*---------------- Content section -------------*/
+    .content-container{
+        width: 100%;
+        padding-top: 30%;
+
+    }
+
+    .content, .content-heading{
+        padding: 0px 20px;
+        font-size: 1.1rem;
+    }
+    .content-heading{
+        font-size: 1.9rem;
+    }
+    .cate-sub-heading{
+        text-align: center;
+    }
+
+    .form-container{
+        width: 100%;
+
+    }
 }
