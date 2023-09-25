@@ -212,6 +212,7 @@
     background-image: url(./assets/asset2.jpg);
     background-size: cover;
     font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
+
 }
 .form-item{
     display: flex;
@@ -305,13 +306,21 @@ label{
     }
     .content-heading{
         font-size: 1.9rem;
+        text-align: center;
     }
+    /* ------------- Category section --------------- */
     .cate-sub-heading{
         text-align: center;
     }
 
+    .cate-heading{
+        text-align: center;
+    }
+
+    /* -------------------- Form Section ---------------- */
     .form-container{
         width: 100%;
 
     }
+
 }

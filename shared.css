@@ -55,3 +55,29 @@
     border: 1px solid purple;
 }
 
+
+@media only screen and (max-width: 650px) {
+
+
+    /*------------------ Navbar --------------*/
+
+
+    .nav-container{
+        flex-direction: column;
+    }
+    .nav-link{
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .nav-btn{
+
+        padding: 5px 8px;
+
+    }
+    .btn-link{
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+}
