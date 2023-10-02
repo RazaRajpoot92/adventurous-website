@@ -4,6 +4,10 @@
 
 }
 
+.nav-container{
+    background-color: rgb(29, 28, 28);
+}
+
 .costomer-container{
     width: 100%;
     height: 90vh;
@@ -110,14 +114,53 @@
     }
 
 }
+@media only screen and (max-width: 900px){
+
+    .review-container{
+        width: 75%;
+    }
+    .customer{
+        width: 100%;
+    }
+    .cust-content{
+        width: 90%;
+        padding-right: 0;
+
+    }
+
+    .content-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5px;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+}
 
 @media only screen and (max-width: 600px){
 
     .review-container{
         width: 90%;
+        height: 500px;
     }
+    .customer{
+        width: 100%;
+    }
+    .cust-content{
+        width: 90%;
+        padding-right: 0;
+
+    }
+
     .content-container{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 5px;
+        padding: 0;
+        font-size: 1rem;
     }
 
 }

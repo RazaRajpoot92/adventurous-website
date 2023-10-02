@@ -12,6 +12,8 @@ li{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
+
 }
 .nav-items{
     display: flex;
