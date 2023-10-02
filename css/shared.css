@@ -1,5 +1,9 @@
 /* Navigation Bar */
 
+li{
+    list-style: none;
+}
+
 .nav-container{
     width: 100%;
     height: 5rem;
