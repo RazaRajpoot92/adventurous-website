@@ -308,7 +308,7 @@
 
     .content, .content-heading{
         padding: 0px 20px;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
     .content-heading{
         font-size: 1.9rem;
@@ -325,8 +325,14 @@
 
     /* -------------------- Form Section ---------------- */
     .form-container{
-        width: 100%;
+        width: 90%;
+        margin:5% auto;
+        padding:10px 40px;
 
+
+    }
+    .form-content{
+        font-size: 1.2rem;
     }
 
 }
