@@ -23,7 +23,7 @@
 }
 
 .review-container{
-    width: 60%;
+    width: 70%;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 15px;
@@ -121,7 +121,7 @@
 @media only screen and (min-width: 1200px){
 
     .review-container{
-        width: 50%;
+        width: 65%;
     }
 
 }
