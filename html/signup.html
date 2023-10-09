@@ -1,108 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/shared.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/shared.css" />
 
     <title>SignUp</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="background">
-        <!------------------ Navigation bar --------------->
-
+      <!------------------ Navigation bar --------------->
 
         <nav class="nav-container">
-
-            <div class="nav-logo  left-nav">
+            <div class="nav-logo left-nav">
                 <a class="logo-link" href="./index.html"><h2>Adventurous</h2></a>
             </div>
 
             <div class="right-nav">
-
                 <ul class="nav-items">
-                    <li><a class="nav-link" href="./index.html">Home</a></li>
-                    <li><a class="nav-link" href="./product.html">Explore</a></li>
-                    <li><a class="nav-link" href="./customer.html">Customer</a></li>
-                    <li class="nav-btn"><a class="btn-link" href="">Log In</a></li>
-                    <li class="nav-btn"><a class="btn-link"  href="./signup.html">Sign Up</a></li>
+                        <li><a class="nav-link" href="./index.html">Home</a></li>
+                        <li><a class="nav-link" href="./product.html">Explore</a></li>
+                        <li><a class="nav-link" href="./customer.html">Customer</a></li>
+                        <li class="nav-btn"><a class="btn-link" href="">Log In</a></li>
+                        <li class="nav-btn">
+                        <a class="btn-link" href="./signup.html">Sign Up</a>
+                    </li>
                 </ul>
-
             </div>
-
         </nav>
 
+      <!---------------- Signup Form ------------------>
 
-    <!---------------- Signup Form ------------------>
+      <h1 class="form-content">
+        Let's signup and get ready for your next adventure!
+      </h1>
 
-    <h1 class="form-content">Let's signup and get ready for your next adventure!</h1>
-
-    <form class="form-container">
+      <form class="form-container">
         <h2 class="form-heading">Sign up</h2>
         <div class="form-item">
-
-            <select class="form-seclect" name="" id="">
-                <option value="mr">Mr.</option>
-                <option value="mrs">Mrs.</option>
-            </select>
+          <select class="form-seclect" name="" id="">
+            <option value="mr">Mr.</option>
+            <option value="mrs">Mrs.</option>
+          </select>
         </div>
 
         <div class="form-item">
-
-            <input class="form-input" placeholder="Enter your first name" type="text" name="fname" required />
+          <input
+            class="form-input"
+            placeholder="Enter your first name"
+            type="text"
+            name="fname"
+            required
+          />
         </div>
 
         <div class="form-item">
-
-            <input class="form-input" placeholder="Enter your last name" type="text" name="lname" required />
+          <input
+            class="form-input"
+            placeholder="Enter your last name"
+            type="text"
+            name="lname"
+            required
+          />
         </div>
         <div class="form-item">
-
-            <input class="form-input" type="email" placeholder="Enter your email" name="email" required/>
+          <input
+            class="form-input"
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            required
+          />
         </div>
 
         <div class="form-item">
-
-            <input class="form-input" placeholder="Enter your password" type="password" name="pass" required/>
+          <input
+            class="form-input"
+            placeholder="Enter your password"
+            type="password"
+            name="pass"
+            required
+          />
         </div>
 
         <div class="form-item">
-
-            <input class="form-input" type="password" placeholder="Again type your password" name="rpass" required/>
+          <input
+            class="form-input"
+            type="password"
+            placeholder="Again type your password"
+            name="rpass"
+            required
+          />
         </div>
 
         <div class="terms-con">
-            <input type="checkbox" required>
-            <p>Agreed with <a href="" class="term-link">Terms and Conditions</a></p>
+          <input type="checkbox" required />
+          <p>
+            Agreed with <a href="" class="term-link">Terms and Conditions</a>
+          </p>
         </div>
 
         <input type="submit" class="sign-btn" value="Sign up" />
 
-        <p class="al-log">Already have an account? <a class="al-log-link" href="">Log In</a></p>
-
-    </form>
+        <p class="al-log">
+          Already have an account? <a class="al-log-link" href="">Log In</a>
+        </p>
+      </form>
     </div>
 
-
-        <!---------------- Footer Section --------------->
+    <!---------------- Footer Section --------------->
 
     <footer class="footer-container">
-
-        <div class="footer-items">
-
-            <div class="footer-links">
-                <a class="footer-link" href="">About Us</a>
-                <a class="footer-link" href="">Contact Us</a>
-                <a class="footer-link" href="">Customer Support</a>
-                <a class="footer-link" href="">Legal</a>
-            </div>
-
-            <p class="copy-con">&copy; 2023 NexusBerry Pakistan, All right reserved.</p>
+      <div class="footer-items">
+        <div class="footer-links">
+          <a class="footer-link" href="">About Us</a>
+          <a class="footer-link" href="">Contact Us</a>
+          <a class="footer-link" href="">Customer Support</a>
+          <a class="footer-link" href="">Legal</a>
         </div>
 
+        <p class="copy-con">
+          &copy; 2023 NexusBerry Pakistan, All right reserved.
+        </p>
+      </div>
     </footer>
-
-
-</body>
+  </body>
 </html>
