@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Mono:ital,wght@1,300&display=swap');
-@import "./data.scss";
 
+// -----------------------Varibles --------------------
+// colors
+
+$h-color:rgb(242, 238, 238);
+$p-color:rgb(242, 242, 242);
+
+
+$bg-color:rgb(39, 33, 33);
+
+// Fonts
+$font-family:'Nunito', sans-serif;
+$h-f-size:4rem;
+$p-f-size:1.5rem;
+
+//Gradients
+$l-gradient:linear-gradient(to bottom,rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.228));
+
+
+
+// Center Function
 
 .center{
     display: flex;
@@ -8,8 +27,14 @@
     justify-content: center;
 }
 
+// -----------------------------------------------------------------------------//
+
+
+#nav-bar{
+    background-color: rgba(20, 19, 19, 0.947);
+}
 .about-container{
-    height: 40vh;
+    height: 50vh;
     background-image: url(../assets/about-background.jpg);
     background-repeat: no-repeat;
     background-position: 0% 0%;
@@ -29,20 +54,18 @@
 
     .about-content{
         color: $h-color;
-
         @extend .center;
-
         flex-direction: column;
 
+
         .about-heading{
-            font-size: 3rem;
+            font-size: $h-f-size;
         }
 
         .about-detail{
             width: 60%;
-            font-size: 1.5rem;
+            font-size: $p-f-size;
             color: $p-color;
-
         }
     }
 
@@ -50,12 +73,51 @@
 
 
 
-.space{
-    height: 100vh;
+.about-story{
+
+    background-color: $bg-color;
+    font-family: $font-family;
+    color: white;
+
+
+    @extend .center;
+
+    .col-container{
+        padding: 40px;
+        @extend .center;
+        column-gap: 40px;
+
+        .col{
+            @extend .center;
+            flex-direction: column;
+            min-width: 40%;
+
+            row-gap: 20px;
+
+
+        }
+    }
+
+
+}
+.love{
+    color: rgb(216, 74, 216);
+}
+
+.col-h{
+font-size: 2.2rem;
+}
+
+.col-p{
+    color: rgb(245, 218, 245);
+    font-size: 1.4rem;
+
 }
 
 
-
+.space{
+    height: 100vh;
+}
 
 
 
@@ -75,6 +137,10 @@
     }
     }
 
+    .col-p{
+        font-size: 1.2rem;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -92,4 +158,26 @@
         }
     }
 }
+
+
+
+
+.col-p{
+    font-size: 0.9rem;
+}
+
+.col-h{
+    font-size: 1.2rem;
+}
+.about-story{
+
+.col-container{
+
+    flex-direction: column;
+    row-gap: 40px;
+
+}
+}
+
+
 }

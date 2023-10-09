@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Mono:ital,wght@1,300&display=swap");
-.center, .content-container .about-content, .content-container {
+.center, .about-story .col-container .col, .about-story .col-container, .about-story, .content-container .about-content, .content-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+#nav-bar {
+  background-color: rgba(20, 19, 19, 0.947);
+}
+
 .about-container {
-  height: 40vh;
+  height: 50vh;
   background-image: url(../assets/about-background.jpg);
   background-repeat: no-repeat;
   background-position: 0% 0%;
@@ -25,12 +29,41 @@
   flex-direction: column;
 }
 .content-container .about-content .about-heading {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .content-container .about-content .about-detail {
   width: 60%;
   font-size: 1.5rem;
-  color: rgb(255, 255, 255);
+  color: rgb(242, 242, 242);
+}
+
+.about-story {
+  background-color: rgb(39, 33, 33);
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+.about-story .col-container {
+  padding: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.about-story .col-container .col {
+  flex-direction: column;
+  min-width: 40%;
+  row-gap: 20px;
+}
+
+.love {
+  color: rgb(216, 74, 216);
+}
+
+.col-h {
+  font-size: 2.2rem;
+}
+
+.col-p {
+  color: rgb(245, 218, 245);
+  font-size: 1.4rem;
 }
 
 .space {
@@ -45,6 +78,9 @@
     font-size: 1.3rem;
     width: 80%;
   }
+  .col-p {
+    font-size: 1.2rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .content-container .about-content .about-heading {
@@ -53,5 +89,15 @@
   .content-container .about-content .about-detail {
     font-size: 1rem;
     width: 80%;
+  }
+  .col-p {
+    font-size: 0.9rem;
+  }
+  .col-h {
+    font-size: 1.2rem;
+  }
+  .about-story .col-container {
+    flex-direction: column;
+    row-gap: 40px;
   }
 }/*# sourceMappingURL=about-us.css.map */
