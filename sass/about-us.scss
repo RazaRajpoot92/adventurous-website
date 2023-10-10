@@ -7,7 +7,7 @@ $h-color:rgb(242, 238, 238);
 $p-color:rgb(242, 242, 242);
 
 
-$bg-color:rgb(39, 33, 33);
+$bg-color:rgb(17, 16, 16);
 
 // Fonts
 $font-family:'Nunito', sans-serif;
@@ -78,6 +78,8 @@ $l-gradient:linear-gradient(to bottom,rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.228)
     background-color: $bg-color;
     font-family: $font-family;
     color: white;
+    letter-spacing: 1px;
+    padding: 3% 0px;
 
 
     @extend .center;
@@ -91,7 +93,6 @@ $l-gradient:linear-gradient(to bottom,rgba(0, 0, 0, 0.399), rgba(0, 0, 0, 0.228)
             @extend .center;
             flex-direction: column;
             min-width: 40%;
-
             row-gap: 20px;
 
 
@@ -109,15 +110,111 @@ font-size: 2.2rem;
 }
 
 .col-p{
-    color: rgb(245, 218, 245);
+    color: rgb(236, 222, 236);
     font-size: 1.4rem;
 
 }
 
+// ------------------------ Meet our team section -----------------------------------
 
-.space{
-    height: 100vh;
+.team-container{
+    @extend .center;
+    padding:4% 0px ;
+    color: white;
+    flex-direction: column;
+    row-gap: 40px;
+    background-color: $bg-color;
+    font-family: $font-family;
+
+
+
 }
+.team-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    width: 50%;
+    letter-spacing: 1px;
+
+}
+.t-heading{
+    font-size: 2.5rem;
+    color: rgb(219, 66, 219);
+}
+.p-heading{
+    font-size: 1.2rem;
+    color: rgb(240, 226, 240);
+}
+
+.team-col-container{
+    @extend .center;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 35px;
+    letter-spacing: 1px;
+
+}
+.t-col{
+    @extend .center;
+    flex-direction: column;
+    row-gap: 7px;
+}
+.img-cont{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid rgb(207, 56, 207);
+}
+
+.mem-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.name{
+    font-size: 1.7rem;
+}
+.degni{
+    font-size: 1rem;
+}
+
+
+.love-us-container{
+
+    display: flex;
+    background-color: $bg-color;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-family;
+    color: white;
+    padding: 3% 0px;
+
+
+}
+.travel-cont{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.travel-img{
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+
+}
+
+.tra-h{
+    font-size: 3rem;
+}
+.tra-p{
+    font-size: 1.8rem;
+}
+
 
 
 
@@ -141,6 +238,36 @@ font-size: 2.2rem;
         font-size: 1.2rem;
     }
 
+
+    .team-content{
+        width: 80%;
+
+        .p-heading{
+            font-size: 1.2rem;
+        }
+
+    }
+
+    // team cont
+
+    .travel-cont{
+        width: 50%;
+
+
+    }
+
+    .travel-img{
+        width: 40%;
+
+    }
+
+    .tra-h{
+        font-size: 2rem;
+    }
+    .tra-p{
+        font-size: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -160,24 +287,55 @@ font-size: 2.2rem;
 }
 
 
+    .col-p{
+        font-size: 0.9rem;
+    }
+
+    .col-h{
+        font-size: 1.2rem;
+    }
+    .about-story{
+
+    .col-container{
+
+        flex-direction: column;
+        row-gap: 40px;
+
+    }
+    }
+
+    // Team content
+
+    .team-content{
+        width: 90%;
+        .p-heading{
+            font-size: 1rem;
+        }
 
 
-.col-p{
-    font-size: 0.9rem;
-}
+    }
+// travel section
 
-.col-h{
-    font-size: 1.2rem;
-}
-.about-story{
 
-.col-container{
 
-    flex-direction: column;
-    row-gap: 40px;
 
-}
-}
 
+    .travel-cont{
+        width: 90%;
+
+
+    }
+
+    .travel-img{
+        display: none;
+
+    }
+
+    .tra-h{
+        font-size: 2rem;
+    }
+    .tra-p{
+        font-size: 1.2rem;
+    }
 
 }
