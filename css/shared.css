@@ -30,7 +30,7 @@ li{
     text-decoration: none;
     color: rgb(248, 245, 245);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 .logo-link:hover{
     color: rgb(215, 83, 215);
@@ -39,7 +39,7 @@ li{
 .nav-link{
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 
 
 }
@@ -50,9 +50,9 @@ li{
 
 .nav-btn{
 
-    padding: 8px 12px;
+    padding: 7px 10px;
     border: 1px solid rgba(0, 0, 0, 0.023);
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgb(221, 38, 221);
 }
 .btn-link{
@@ -109,6 +109,11 @@ li{
 
     .nav-container{
         flex-direction: column;
+
+    }
+
+    .nav-items{
+        column-gap: 8px;
     }
     .nav-link{
         text-decoration: none;
@@ -118,13 +123,15 @@ li{
     }
     .nav-btn{
 
-        padding: 5px 8px;
+        padding: 4px 7px;
+
 
     }
     .btn-link{
         font-size: 0.8rem;
         font-weight: bold;
     }
+
 
 
     /* --------- footer section ----------- */

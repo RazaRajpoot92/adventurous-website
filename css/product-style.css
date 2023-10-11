@@ -21,8 +21,9 @@
 .product-container{
     min-height: 700px;
     background-color: #2a2b30;
-    padding-top: 20px;
+    padding: 4% 0px;
     font-family: 'Nunito', sans-serif;
+
 
 }
 .products{
@@ -30,12 +31,10 @@
     margin: auto;
     display: flex;
     justify-content: center;
-    column-gap: 15px;
-    row-gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
     flex-shrink: 10px;
     padding-bottom: 20px;
-
 
 }
 
