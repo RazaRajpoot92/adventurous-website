@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../sass/about-us.css">
     <link rel="stylesheet" href="../css/shared.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>About US</title>
 </head>
 <body onresize=navClose()>
@@ -59,7 +60,7 @@
     <section class="about-container">
 
     <div class=" content-container gradient">
-        <div class="about-content">
+        <div class="about-content" data-aos="zoom-in">
 
             <h1 class="about-heading">About Us and Our Story</h1>
 
@@ -75,7 +76,7 @@
 
     <section class="about-story">
 
-        <div class="col-container">
+        <div class="col-container" data-aos="zoom-in">
 
             <div class="col1 col">
                 <h1 class="col-h">How it started</h1>
@@ -113,12 +114,12 @@
     </section>
 
     <section class="team-container">
-        <div class="team-content">
+        <div class="team-content" data-aos="fade-left">
         <h1 class="t-heading">Meet our Team</h1>
         <h3 class="p-heading">We are a team of travel enthusiasts who love to share our passion and knowledge with you. We come from different backgrounds and have different skills, but we have one thing in common: we love to travel.</h3>
         </div>
 
-        <div class="team-col-container">
+        <div class="team-col-container" data-aos="zoom-out">
 
             <div class="t-col col1">
                 <div class="img-cont">
@@ -170,7 +171,7 @@
 
     <section class="love-us-container">
 
-        <div class="travel-cont">
+        <div class="travel-cont" data-aos="fade-right">
             <h1 class="tra-h">Why is <span class="love">Adventurous</span> different?</h1>
             <p class="tra-p">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
@@ -180,7 +181,7 @@
             </p>
         </div>
 
-        <div class="travel-img">
+        <div class="travel-img" data-aos="fade-left">
 
             <img src="../assets/tra.png" width="80%" height="80%" alt="">
 
@@ -194,7 +195,7 @@
 
 <footer class="footer-container">
 
-    <div class="footer-items">
+    <div class="footer-items" data-aos="zoom-in">
 
         <div class="footer-links">
             <a class="footer-link" href="">About Us</a>
@@ -235,7 +236,21 @@
 
 </script>
 
+<!-------------- AOS script ----------- -->
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+
+
+  AOS.init({
+    offset: 90, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 2000,
+  });
+
+
+</script>
 
 </body>
 </html>

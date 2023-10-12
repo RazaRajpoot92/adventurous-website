@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/customer-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Customer Reviews</title>
 </head>
 <body onresize=navClose()>
@@ -55,7 +57,9 @@
 
 <div class="costomer-container">
 
-    <div class="review-container">
+    <!-- 1st review -->
+
+    <div class="review-container" data-aos="fade-left">
 
         <div class="content-container">
 
@@ -92,10 +96,10 @@
 
     </div>
 
-    <!-- New review -->
+    <!-- 2nd review -->
 
 
-    <div class="review-container ">
+    <div class="review-container " data-aos="fade-right">
 
         <div class="content-container reverse">
 
@@ -133,7 +137,7 @@
 
     <!-- 3rd Reviews  -->
 
-    <div class="review-container">
+    <div class="review-container" data-aos="fade-left">
 
 
         <div class="content-container">
@@ -185,7 +189,7 @@
 
     <footer class="footer-container">
 
-        <div class="footer-items">
+        <div class="footer-items" data-aos="zoom-in">
 
             <div class="footer-links">
                 <a class="footer-link" href="">About Us</a>
@@ -202,6 +206,7 @@
 
 
 <script>
+
     function showSideBar(){
         const sidebar = document.getElementById("side-menu")
         sidebar.style.display= "flex"
@@ -226,6 +231,21 @@
 
 </script>
 
+<!-------------- AOS script ----------- -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+
+
+  AOS.init({
+    offset: 100, // offset (in px) from the original trigger point
+    delay: 2, // values from 0 to 3000, with step 50ms
+    duration: 1500,
+  });
+
+
+</script>
 
 </body>
 </html>
