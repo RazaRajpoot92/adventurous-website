@@ -41,6 +41,7 @@
   height: 100vh;
   background-image: url(../assets/asset3.jpg);
   background-size: cover;
+  background-position: center;
   font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
 }
 
