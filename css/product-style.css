@@ -3,7 +3,7 @@
 .nav-container{
     background-color: #111112;
 }
-.btn{
+.product-btn{
     padding: 10px 50px;
     background-color: rgb(214, 58, 219);
     color: black;
@@ -14,7 +14,7 @@
     border:1px solid rgb(222, 53, 222);
     transition: 0.3s;
 }
-.btn:hover{
+.product-btn:hover{
     background-color: rgba(128, 0, 128, 0);
     color: rgb(229, 223, 223);
 }
